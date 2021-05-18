@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-18T16:12:45.412Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="U9UpKp-kAii8YS52Ph5w" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-18T16:29:44.175Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="s8gumm2WImbUsKifHorn" version="14.6.11" type="github">
   <diagram id="U__FN5Xc6xBBoOLqt65z" name="Page-1">
-    <mxGraphModel dx="923" dy="334" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="923" dy="375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -21,6 +21,21 @@
         </mxCell>
         <mxCell id="ZKgbiBXLcRlq5cuQc_4f-8" value="BufferedInputStream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="900" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKgbiBXLcRlq5cuQc_4f-9" value="例如，输入流在默认情况下是不被缓冲区缓存&#xa; 的，也就是说，每个对 read 的调用都会请求操作系统再分发 个字节 相比之下，请求&#xa; 个数据块并将其置于缓冲区中会显得更加高效" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="790" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKgbiBXLcRlq5cuQc_4f-10" value="read write 方法在执行时都将阻塞，直至字节确实被读入或写出 这就意味 如果&#xa; 流不能被立即访问（通常是因为 络连接忙），那么当前的线程将被阻塞" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="730" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKgbiBXLcRlq5cuQc_4f-11" value="关闭一个输出流的同时还会冲刷用于该输出流的缓冲区" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="880" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKgbiBXLcRlq5cuQc_4f-12" value="如果不关闭文件，那么写出字节 最后 个包可能将永远也得不到传递" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="920" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZKgbiBXLcRlq5cuQc_4f-13" value="OutputStreamWriter 类将使用选定的字符编码方式，把 ni co 码元的输出流转换为&#xa; 字节流" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="980" width="460" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
